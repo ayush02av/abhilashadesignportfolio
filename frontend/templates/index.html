@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+    {% block cssblock %}
+    	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+	{% endblock %}
+	
+	{% block body %}
+		<div id="banner">
+			<div id="banner-info">
+				<p>
+					<span class="heading">Abhilasha Kalra</span>
+					<span class="brief-heading">Portfolio</span>
+					<br>
+					<span class="text">
+						<b>5+</b> projects
+						<br>
+						<b>20+</b> designs
+						<br>
+						<b>3</b> completed internships
+					</span>
+					<br><br>
+					<span id="banner-call-to-action" onclick="Scroll('body')">Dive in</span>
+				</p>
+			</div>
+			<div id="banner-preview">
+				<div id="banner-preview-card-container">
+					<div class="banner-preview-card">
+						<img src="https://blog.hubspot.com/hubfs/design-1.jpg">
+						<p>
+							<span class="brief-heading">Project 1</span>
+						</p>
+					</div>
+					<div class="banner-preview-card">
+						<img src="https://storage.googleapis.com/gd-wagtail-prod-assets/original_images/Design-Guide-IO_3X2.png">
+						<p>
+							<span class="brief-heading">Project 2</span>
+						</p>
+					</div>
+					<div class="banner-preview-card">
+						<img src="https://hbr.org/resources/images/article_assets/2018/08/R1805D_CHIN.jpg">
+						<p>
+							<span class="brief-heading">Project 3</span>
+						</p>
+					</div>
+					<div class="banner-preview-card">
+						<img src="https://www.aiga.org/sites/default/files/styles/two_thirds_width_768/public/Graphic-Design-Histories-EoD-1600x980.jpg?itok=LUU69zaI">
+						<p>
+							<span class="brief-heading">Project 4</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id="body" style="width: 100%; height: 100vh; background: blue; color: white;">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			<br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div> -->
+	{% endblock %}

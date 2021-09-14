@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+:root{
+  --default-background: #F3F7F2;
+  --default-color: #8E1DAB;
+
+  --primary-color-1: #BAD9B5;
+  --primary-color-2: #383D3B;
+
+  --secondary-color-1: #FCAA67;
+  --secondary-color-2: #6F1A07;
+
+  --helper-color-1: #20F7DB;
+  --helper-color-2: #A8081E;/*#A8081E;*/
+  --box-shadow-color: rgb(240, 240, 240, 0.2);
+}
+
+
+*{
+	outline: none;
+	text-decoration: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 20px;
+	font-weight: 400;
+	font-family: Roboto;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+.heading{
+	display: block;
+	font-weight: bold;
+	font-family: Satisfy;
+}
+
+.brief-heading{
+	display: block;
+	font-style: italic;
+	/*font-family: Satisfy;*/
+}
+
+.text{
+	display: block;
+	font-size: 25px;
+	font-family: Roboto;
+}

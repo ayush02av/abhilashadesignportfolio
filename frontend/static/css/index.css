@@ -1,0 +1,118 @@
+#banner{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+#banner > div{
+	min-height: 100vh;
+	flex: 1 1 500px;
+}
+
+#banner-info{
+	background: var(--primary-color-2);
+	color: var(--primary-color-1);
+	display: grid;
+	place-items:  center;
+	font-size: 50px;
+}
+
+@keyframes banner-preview-animation{
+	0%{
+		background: var(--primary-color-1);
+	}90%{
+		background: var(--helper-color-1);
+	}100%{
+		background: var(--primary-color-1);
+	}
+}
+
+#banner-preview{
+	/*background: var(--primary-color-1);*/
+	animation: banner-preview-animation 20s infinite;
+}
+
+#banner-preview-card-container{
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-top: 120px;
+	margin-left: -100px;
+}
+
+.banner-preview-card{
+	flex: 0 1 300px;
+
+	margin: 30px;
+	height: 200px;
+
+	font-size: 25px;
+
+	background: var(--helper-color-1);
+	color: var(--helper-color-2);
+	border-radius: 2px;
+
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transition: 0.5s;
+}
+
+.banner-preview-card > img{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+}
+
+.banner-preview-card > p{
+	display: none;
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.banner-preview-card:hover{
+	box-shadow: 1px 0px 5px var(--box-shadow-color),
+				-1px 0px 5px var(--box-shadow-color),
+				0px 1px 5px var(--box-shadow-color),
+				0px -1px 5px var(--box-shadow-color);
+}
+
+.banner-preview-card:hover > img{
+	opacity: 0.3;
+	transition: 0.5s;
+}
+
+.banner-preview-card:hover > p{
+	display: block;
+	transition: 0.5s;
+}
+
+@media screen and (max-width: 1000px){
+	#banner-preview-card-container{
+		margin: 0;
+	}
+}
+
+#banner-call-to-action{
+	background: var(--secondary-color-1);
+	color: var(--primary-color-2);
+
+	border-radius: 50px;
+
+	cursor: pointer;
+
+	font-size: 35px;
+	font-family: cursive;
+
+	padding: 10px 20px;
+	
+	transition: 0.2s;
+	border: 1px solid whitesmoke;
+}
+
+#banner-call-to-action:hover{
+	transition: 0.2s;
+
+	background: var(--primary-color-2);
+	color: var(--primary-color-1);
+}
